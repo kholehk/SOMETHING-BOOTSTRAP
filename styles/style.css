@@ -1,0 +1,31 @@
+body {
+   min-width: 320px;
+}
+
+.my-card {
+   margin-right: 20px;
+   flex: 1 0 calc(25% - 20px * 4 / 3);
+}
+
+.my-card:last-child {
+   margin-right: 0;
+}
+
+/* 768 */
+@media (max-width: 999px) {
+   .my-card {
+      flex: 1 0 calc(50% - 20px * 2 / 1);
+   }
+
+   .my-card:nth-child(2n) {
+      margin-right: 0;
+   }
+}
+
+/* 320 */
+@media (max-width: 767px) {
+   .my-card {
+      margin-right: 0;
+      flex: 1 0 100%;
+   }
+}
